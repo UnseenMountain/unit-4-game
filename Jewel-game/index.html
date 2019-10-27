@@ -8,7 +8,7 @@
     <link rel="style-reset" href="assets/css/reset.css">
     <title>Jewel game</title>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 <body>
@@ -17,10 +17,22 @@
     <script src="assets/javascript/game.js"></script>
     <p>In this game you will select a colored jewel to add numbers to add up to the displaed number.</p>
 
-    <button class="jewel1">jewel1</button>
-    <button class="jewel2">jewel2</button>
-    <button class="jewel3">jewel3</button>
-    <button class="jewel4">jewel4</button>
+    <img id="jewel1" height="100px" width="100px" src="https://cdnb.artstation.com/p/assets/images/images/001/426/073/large/sebastian-feistl-final-nonoise.jpg?1446205113"> 
+    <img class="jewel2" height="100px" width="100px" src="assets/images/jewel2.jpg"> 
+    <img class="jewel3" height="100px" width="100px" src="assets/images/jewel3.jpg"> 
+
+    <script type= "text/javascript">
+    var counter = 0;
+    $("#jewel1").on("click", function() {
+
+// Each time the user clicks the crystal the counter goes up by 1.
+counter += 1;
+
+// We then output the number of times the crystal is clicked.
+alert("You clicked this crystal " + counter + " times!");
+
+});
+    </script>
 
 </body>
 </html>
