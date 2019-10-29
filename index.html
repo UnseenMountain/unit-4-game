@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/javascript/gamemanager.js"></script>
+    <script src="assets/javascript/player.js"></script>
+    <script src="assets/javascript/enemy.js"></script>
+</head>
+<body>
+    
+    <div class="title"> 
+        <p>Get ready for an epic adventure</p>
+        <h2>Choose thy charicter</h2>
+
+    </div>
+
+    <div class="UI">
+        <a href="#" onclick='GameManger.setGameStart("Warrior")'>
+
+            <img height="150" width="150" src="assets/images/warrior.jpg" alt="warrior">
+            <h2>Warrior</h2>
+            <p>warriors have higher health and stamina but low magic and speed.</p>
+            
+    </div>
+
+        <a href="#" onclick="GameManger.setGameStart('Assassin')">
+
+            <img height="150" width="150" src="assets/images/assassin.jpg" alt="warrior">
+            <h2>Assassin</h2>
+            <p>Masters of stealth these guys have exseptional speed but low health</p>
+            
+    </div>
+</a>
+        <a href="#" onclick="GameManger.setGameStart('Hunter')">
+
+            <img height="150" width="150" src="assets/images/hunter.jpg" alt="warrior">
+            <h2>Hunter</h2>
+            <p>Hunters attack from a distance and are generaly an all oround type</p>
+            
+    </div>
+</a>
+
+    <div class="actions">
+
+    </div>
+    
+    <div class="arena">
+
+    </div>
+    
+    <div class="defenders">
+
+    </div>
+
+</body>
+</html>

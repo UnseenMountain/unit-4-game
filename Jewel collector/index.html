@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="style-reset" href="assets/css/reset.css">
+    <title>Jewel game</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+    
+    <h1>Jewel game</h1>
+    <script src="assets/javascript/game.js"></script>
+    <p>In this game you will select a colored jewel to add numbers to add up to the displaed number.</p>
+
+    <img id="jewel1" height="100px" width="100px" src="assets/images/jewel1.jpg"> 
+    <img id="jewel2" height="100px" width="100px" src="assets/images/jewel2.jpg"> 
+    <img id="jewel3" height="100px" width="100px" src="assets/images/jewel3.jpg"> 
+
+    
+    
+   <p> <button>Submit</button> </p>
+    
+    <script type= "text/javascript">
+    
+    
+    var jewelValue1 = 45;
+    $("#jewel1").on("click", function() {
+
+// Each time the user clicks the crystal the counter goes up by 1.
+
+
+// We then output the number of times the crystal is clicked.
+alert("this jewels is worth " + jewelValue1);
+
+});
+    </script>
+
+</body>
+</html>
