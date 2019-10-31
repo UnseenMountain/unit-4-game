@@ -4,58 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <title>Document</title>
-
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/javascript/gamemanager.js"></script>
-    <script src="assets/javascript/player.js"></script>
-    <script src="assets/javascript/enemy.js"></script>
 </head>
 <body>
-    
-    <div class="title"> 
-        <p>Get ready for an epic adventure</p>
-        <h2>Choose thy charicter</h2>
-
-    </div>
-
-    <div class="UI">
-        <a href="#" onclick='GameManger.setGameStart("Warrior")'>
-
-            <img height="150" width="150" src="assets/images/warrior.jpg" alt="warrior">
-            <h2>Warrior</h2>
-            <p>warriors have higher health and stamina but low magic and speed.</p>
+        <div class="container">
             
-    </div>
+            <div class="jumbotron">
+    <h1>Welcome to the multiverse RPG</h1>
+    <p>Please select a Character</p>
+</div>
 
-        <a href="#" onclick="GameManger.setGameStart('Assassin')">
+<div class="row">
 
-            <img height="150" width="150" src="assets/images/assassin.jpg" alt="warrior">
-            <h2>Assassin</h2>
-            <p>Masters of stealth these guys have exseptional speed but low health</p>
-            
-    </div>
-</a>
-        <a href="#" onclick="GameManger.setGameStart('Hunter')">
+    <div class="col-lg-12" id="characters-available">
 
-            <img height="150" width="150" src="assets/images/hunter.jpg" alt="warrior">
-            <h2>Hunter</h2>
-            <p>Hunters attack from a distance and are generaly an all oround type</p>
-            
-    </div>
-</a>
+            <span class="character-image available-character" id="luke-skywalker-character">
+    <p>Luke Skywalker</p>
+    <img class="#" id="luke" height="150px" width="150px" src="assets/images/jedi.jpg"> 
+   <p class="health">130</p>
 
-    <div class="actions">
+   <span class="character-image available-character" id="v-character">
+    <p>V</p>
+    <img class="#" id="V" height="150px" width="150px" src="assets/images/V.jpg"> 
+   <p class="health">150</p>
 
-    </div>
+   <span class="character-image available-character" id="captian-price-character">
+    <p>Captian Price</p>
+    <img class="#" id="captianPrice" height="150px" width="150px" src="assets/images/price.jpg"> 
+    <p class="health">100</p>
+
+    <span class="character-image available-character" id="John-Wick-character">
+    <p>Keanu Reeves</p>
+    <img class="#" id="best" height="150px" width="150px" src="assets/images/keanureaves.jpeg">
+    <p class="health">160</p>
+</div>
+
+<div class="col-lg-12" id="chossen-character">
+    <h2>Your Character</h2>
+
+</div>
+
+<div class="col-lg-12" id="avalible-enemys">
+    <h2>Characters available to attack.</h2>
+
+</div>
+
+<div class="col-lg-12" id="attack-section">
+
+        <h2>Attack feield</h2>
+        
+        <button id="attack">Attack</button> 
+        </div>
+
+<div class="col-lg-12" id="defenders">
+
+<h2>Defenders</h2>
+
+
+</div>
+<p> <button>Attack</button> </p>
     
-    <div class="arena">
-
-    </div>
     
-    <div class="defenders">
-
-    </div>
-
 </body>
 </html>
