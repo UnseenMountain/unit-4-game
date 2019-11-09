@@ -71,7 +71,7 @@ function moveToEnemies() {
 
 
 function resetGame() {
-  
+
   $("#luke-Skywalker").children(".health").html(lukeSkywalker.health);
   $("#V").children(".health").html(V.health);
   $("#captian-Price").children(".health").html(captianPrice.health);
@@ -96,14 +96,14 @@ function resetGame() {
 // ----- Main Routine ----- //
 
 // Run Javascript when the HTML has finished loading
-$(document).ready(function() {
+$(document).ready(function () {
 
   // Determine which character the user has clicked
   $("#luke-Skywalker").on("click", function () {
     console.log("Luke Skywalker is selected");
 
     // User is choosing the character
-    if(characterSelected == false) {
+    if (characterSelected == false) {
       $("#game-message").empty();
 
       // Set the user's character
@@ -118,7 +118,7 @@ $(document).ready(function() {
       moveToEnemies();
     } else if ((characterSelected == true) && (defenderSelected == false)) {
       // User is choosing the defender
-      if($("#luke-Skywalker").hasClass("enemy-character")) {
+      if ($("#luke-Skywalker").hasClass("enemy-character")) {
         $("#game-message").empty();
 
         // Set the user's enemy
@@ -135,30 +135,30 @@ $(document).ready(function() {
   $("#V").on("click", function () {
     console.log("V is selected");
 
-    
-    if(characterSelected == false) {
+
+    if (characterSelected == false) {
       $("#game-message").empty();
 
-      
+
       initializeCharacter(V);
       characterSelected = true;
 
-      
+
       $("#V").removeClass("available-character").addClass("chosen-character");
       $("#chosen-character").append(this);
 
-      
+
       moveToEnemies();
     } else if ((characterSelected == true) && (defenderSelected == false)) {
-      
-      if($("#V").hasClass("enemy-character")) {
+
+      if ($("#V").hasClass("enemy-character")) {
         $("#game-message").empty();
 
-        
+
         initializeDefender(V);
         defenderSelected = true;
 
-         
+
         $("#V").removeClass("enemy-character").addClass("defender-character");
         $("#defender-section").append(this);
       }
@@ -168,26 +168,26 @@ $(document).ready(function() {
   $("#captian-Price").on("click", function () {
     console.log("Captian Price is selected");
 
-    
-    if(characterSelected == false) {
+
+    if (characterSelected == false) {
       $("#game-message").empty();
 
-      
+
       initializeCharacter(captianPrice);
       characterSelected = true;
 
-      
+
       $("#captian-Price").removeClass("available-character").addClass("chosen-character");
       $("#chosen-character").append(this);
 
-      
+
       moveToEnemies();
     } else if ((characterSelected == true) && (defenderSelected == false)) {
-      
-      if($("#captian-Price").hasClass("enemy-character")) {
+
+      if ($("#captian-Price").hasClass("enemy-character")) {
         $("#game-message").empty();
 
-        
+
         initializeDefender(captianPrice);
         defenderSelected = true;
 
@@ -198,40 +198,40 @@ $(document).ready(function() {
     }
   });
 
-//   $("#Johnny").on("click", function () {
-//     console.log("Keannu Reeves is selected");
+  //   $("#Johnny").on("click", function () {
+  //     console.log("Keannu Reeves is selected");
 
-//     // User is choosing the character
-//     if(characterSelected == false) {
-//       $("#game-message").empty();
+  //     // User is choosing the character
+  //     if(characterSelected == false) {
+  //       $("#game-message").empty();
 
-//       // Set the user's character
-//       initializeCharacter(Johnny);
-//       characterSelected = true;
+  //       // Set the user's character
+  //       initializeCharacter(Johnny);
+  //       characterSelected = true;
 
-//       // Display the chosen character
-//       $("#Johnny").removeClass("available-character").addClass("chosen-character");
-//       $("#chosen-character").append(this);
+  //       // Display the chosen character
+  //       $("#Johnny").removeClass("available-character").addClass("chosen-character");
+  //       $("#chosen-character").append(this);
 
-//       // Move the remaining characters to the enemies section
-//       moveToEnemies();
-//     } else if ((characterSelected == true) && (defenderSelected == false)) {
-//       // User is choosing the defender
-//       if($("Johnny").hasClass("enemy-character")) {
-//         $("#game-message").empty();
+  //       // Move the remaining characters to the enemies section
+  //       moveToEnemies();
+  //     } else if ((characterSelected == true) && (defenderSelected == false)) {
+  //       // User is choosing the defender
+  //       if($("Johnny").hasClass("enemy-character")) {
+  //         $("#game-message").empty();
 
-//         // Set the user's enemy
-//         initializeDefender(Johnny);
-//         defenderSelected = true;
+  //         // Set the user's enemy
+  //         initializeDefender(Johnny);
+  //         defenderSelected = true;
 
-//         // Add the character to the defender section 
-//         $("#Johnny").removeClass("enemy-character").addClass("defender-character");
-//         $("#defender-section").append(this);
-//       }
-//     }
-//   });
+  //         // Add the character to the defender section 
+  //         $("#Johnny").removeClass("enemy-character").addClass("defender-character");
+  //         $("#defender-section").append(this);
+  //       }
+  //     }
+  //   });S
 
-  $("#attack").on("click", function() {
+  $("#attack").on("click", function () {
     console.log("Attack selected");
 
     console.log("character = " + JSON.stringify(character));
