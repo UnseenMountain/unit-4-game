@@ -31,9 +31,9 @@ var V = {
   attack: 5
 };
 
-var captianPrice = {
-  name: "Captian Price",
-  health: 100,
+var sonic = {
+  name: "Sonic the Hedgehog",
+  health: 160,
   baseAttack: 20,
   attack: 20
 };
@@ -74,7 +74,7 @@ function resetGame() {
 
   $("#luke-Skywalker").children(".health").html(lukeSkywalker.health);
   $("#V").children(".health").html(V.health);
-  $("#captian-Price").children(".health").html(captianPrice.health);
+  $("#Sonic").children(".health").html(sonic.health);
   $("#johnny-Silverhand").children(".health").html(johnnySilverhand.health);
 
   $(".character-image").removeClass("chosen-character enemy-character defender-character").addClass("available-character");
@@ -165,34 +165,34 @@ $(document).ready(function () {
     }
   });
 
-  $("#captian-Price").on("click", function () {
-    console.log("Captian Price is selected");
+  $("#Sonic").on("click", function () {
+    console.log("Sonic is selected");
 
 
     if (characterSelected == false) {
       $("#game-message").empty();
 
 
-      initializeCharacter(captianPrice);
+      initializeCharacter(sonic);
       characterSelected = true;
 
 
-      $("#captian-Price").removeClass("available-character").addClass("chosen-character");
+      $("#Sonic").removeClass("available-character").addClass("chosen-character");
       $("#chosen-character").append(this);
 
 
       moveToEnemies();
     } else if ((characterSelected == true) && (defenderSelected == false)) {
 
-      if ($("#captian-Price").hasClass("enemy-character")) {
+      if ($("#Sonic").hasClass("enemy-character")) {
         $("#game-message").empty();
 
 
-        initializeDefender(captianPrice);
+        initializeDefender(sonic);
         defenderSelected = true;
 
         // Add the character to the defender section 
-        $("#captian-Price").removeClass("enemy-character").addClass("defender-character");
+        $("#Sonic").removeClass("enemy-character").addClass("defender-character");
         $("#defender-section").append(this);
       }
     }
@@ -257,7 +257,7 @@ $(document).ready(function () {
           $("#game-message").append("<p>" + defender.name + " attacked you back for " + defender.baseAttack + " damage.</p>");
         } else {
           gameOver = true;
-          $("#game-message").html("<p>You were defeated... womp womp...</p><p>Play again?</p>");
+          $("#game-message").html("<p>You were defeated. </p><p>Reset the page to play again?</p>");
           $("#restart").show();
         }
       } else {
@@ -270,7 +270,7 @@ $(document).ready(function () {
         // Check if the user has won the game
         if (enemiesDefeated === 3) {
           gameOver = true;
-          $("#game-message").html("<p>You have won the game!!!</p><p>Play again?</p>");
+          $("#game-message").html("<p>You have Saved the Multiverse thank you warrior!!!</p><p>Please reset the site to play again?</p>");
         }
       }
     } else if (!characterSelected && !gameOver) {
