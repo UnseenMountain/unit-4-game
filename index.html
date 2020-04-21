@@ -5,13 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
   <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="
     crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-
+  <link rel="stylesheet" href="assets/css/style.css">
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  
+ 
   <title>The multiverse RPG</title>
 </head>
 
@@ -24,62 +25,87 @@
     </div>
 
     <div class="row">
-
       <div class="col-lg-12" id="characters-available">
+        <div id="backround">
 
-        <span class="character-image available-character" id="luke-Skywalker">
-          <p>Luke Skywalker</p>
-          <img id="luke" height="200px" width="200px" src="assets/images/jedi.jpg">
-          <p class="health">130</p>
-        </span>
-        <span class="character-image available-character" id="V">
-          <p>V</p>
-          <img id="V" height="200px" width="200px" src="assets/images/V.jpg">
-          <p class="health">150</p>
-        </span>
-        <span class="character-image available-character" id="Sonic">
-          <p>Sonic The Hedgehog</p>
-          <img id="sonic" height="200px" width="200px" src="assets/images/sonic.webp">
-          <p class="health">160</p>
-        </span>
-        <span class="character-image available-character" id="johnney-Silverhand">
-          <p>Johnney Silverhand (AKA keanu Reaves nuff said)</p>
-          <img id="johnneySilverhand" height="200px" width="200px" src="assets/images/keanureaves.jpeg">
-          <p class="health">180</p>
-        </span>
+          <span class="character-image available-character" id="luke-Skywalker">
+            <p>Luke Skywalker</p>
+            <img id="luke" height="200px" width="200px" src="assets/images/jedi.jpg">
+            <p class="health">130</p>
+          </span>
+
+          <span class="character-image available-character" id="V">
+            <p>V</p>
+            <img id="V" height="200px" width="200px" src="assets/images/V.jpg">
+            <p class="health">150</p>
+          </span>
+
+          <span class="character-image available-character" id="Sonic">
+            <p>Sonic The Hedgehog</p>
+            <img id="sonic" height="200px" width="200px" src="assets/images/sonic.webp">
+            <p class="health">160</p>
+          </span>
+          
+          <span class="character-image available-character" id="johnney-Silverhand">
+            <p>Johnney Silverhand (AKA keanu Reaves nuff said)</p>
+            <img id="johnneySilverhand" height="200px" width="200px" src="assets/images/keanureaves.jpeg">
+            <p class="health">180</p>
+          </span>
+        </div>
       </div>
-
-      <div class="col-lg-12" id="chosen-character">
-        <h2>Your Character</h2>
-      </div>
+    </div>
 
 
-      <div class="col-lg-12" id="enemies-available">
-        <h2>Enemies Available To Attack</h2>
-      </div>
+    <div class="col-lg-12" id="chosen-character">
+      <h2>Your Character</h2>
+    </div>
 
 
-      <div class="col-lg-12" id="fight-section">
-        <h2>Fight Section</h2>
-        <button id="attack">Attack</button>
-      </div>
+    <div class="col-lg-12" id="enemies-available">
+      <h2>Enemies Available To Attack</h2>
+    </div>
 
 
-      <div class="col-lg-12" id="defender-section">
-        <h2>Defender</h2>
-      </div>
-
-      <div class="col-lg-12" id="message-section">
-        <div id="game-message"></div>
-      </div>
+    <div class="col-lg-12" id="fight-section">
+      <h2>Fight Section</h2>
+      <button id="attack">Attack</button>
+    </div>
 
 
+    <div class="col-lg-12" id="defender-section">
+      <h2>Defender</h2>
+    </div>
+
+    <div class="col-lg-12" id="message-section">
+      <div id="game-message"></div>
+    </div>
+
+
+  </div>
+  
+  <div class="card">
+    <div class="card-header">
+     
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <p></p>
+        <footer class="blockquote-footer"> <cite title="Source Title"></cite></footer>
+      </blockquote>
     </div>
   </div>
   <script src="assets/javascript/game.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
 
-  
- 
+
 
 
 
